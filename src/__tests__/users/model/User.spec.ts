@@ -13,6 +13,7 @@ describe("User model", () => {
       updated_at: new Date(),
     });
 
+    console.log(validate(user.id));
     expect(user).toMatchObject({
       name: "Atlas",
       email: "atlas@fromspace.com",
